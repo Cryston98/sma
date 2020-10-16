@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dialog">
+
+    <TextView
+        android:id="@+id/titlePage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interface for Activity 2"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+    />
+
+    <LinearLayout
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_below="@id/titlePage2"
+        android:background="@drawable/border"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Dialog"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/dialogText"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:gravity="center"
+            android:hint="Enter something..."
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/ok_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Ok"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/show_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Show Dialog!"
+        android:textAlignment="center" />
+
+</RelativeLayout>
