@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lab3Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/preferenceSide"
+        >
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/savePref"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Save Pref"></Button>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/readPref"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Read Pref"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fileSide"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preferenceSide">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/saveFile"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Save File"></Button>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/readFile"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Read File"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sqlSide"
+        android:layout_below="@id/fileSide"
+        >
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/saveSQL"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Save SQL"></Button>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/readSQL"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Read SQL"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputSide"
+        android:layout_below="@id/sqlSide"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputID"
+            android:layout_margin="10dp"
+            android:hint="Enter text here ..."
+            android:layout_marginBottom="20dp"
+            ></EditText>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+            <TextView
+                android:id="@+id/resultOpt"
+                android:layout_width="match_parent"
+                android:layout_height="473dp"
+                android:layout_margin="10dp"
+                android:hint="Results : "
+                android:lines="20"
+
+
+                ></TextView>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
