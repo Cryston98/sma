@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "706333844493",
+    "firebase_url": "https://sma-lab-8fa26.firebaseio.com",
+    "project_id": "sma-lab-8fa26",
+    "storage_bucket": "sma-lab-8fa26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706333844493:android:708d06cbabf5ade654a144",
+        "android_client_info": {
+          "package_name": "com.example.sma_lab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706333844493-h991b55flfa900fcu6dnvpaqgued415s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3MGYPPzy7jX1u3yhVAvZmoaI1GG0RhdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706333844493-h991b55flfa900fcu6dnvpaqgued415s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
